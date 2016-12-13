@@ -12,6 +12,10 @@
 		F164267D1DFDCEDF00BE0C9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F164267B1DFDCEDF00BE0C9C /* MainMenu.xib */; };
 		F16426851DFDD1AD00BE0C9C /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16426841DFDD1AD00BE0C9C /* StatusMenuController.swift */; };
 		F1D574ED1E00162D00E71663 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D574EC1E00162D00E71663 /* StatusView.swift */; };
+		F1D574EF1E00241700E71663 /* MouseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D574EE1E00241700E71663 /* MouseManager.swift */; };
+		F1D574F11E00243B00E71663 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D574F01E00243B00E71663 /* ConnectionManager.swift */; };
+		F1D574F31E0028A100E71663 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D574F21E0028A100E71663 /* Constants.swift */; };
+		F1D574F51E0028B800E71663 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D574F41E0028B800E71663 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F164267E1DFDCEDF00BE0C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F16426841DFDD1AD00BE0C9C /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		F1D574EC1E00162D00E71663 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		F1D574EE1E00241700E71663 /* MouseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseManager.swift; sourceTree = "<group>"; };
+		F1D574F01E00243B00E71663 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		F1D574F21E0028A100E71663 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1D574F41E0028B800E71663 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +63,14 @@
 			isa = PBXGroup;
 			children = (
 				F16426771DFDCEDF00BE0C9C /* AppDelegate.swift */,
+				F1D574F21E0028A100E71663 /* Constants.swift */,
+				F1D574F41E0028B800E71663 /* Extensions.swift */,
 				F16426841DFDD1AD00BE0C9C /* StatusMenuController.swift */,
+				F1D574EE1E00241700E71663 /* MouseManager.swift */,
+				F1D574F01E00243B00E71663 /* ConnectionManager.swift */,
+				F1D574EC1E00162D00E71663 /* StatusView.swift */,
 				F16426791DFDCEDF00BE0C9C /* Assets.xcassets */,
 				F164267B1DFDCEDF00BE0C9C /* MainMenu.xib */,
-				F1D574EC1E00162D00E71663 /* StatusView.swift */,
 				F164267E1DFDCEDF00BE0C9C /* Info.plist */,
 			);
 			path = "Basic Trackpad Server";
@@ -136,9 +148,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D574F11E00243B00E71663 /* ConnectionManager.swift in Sources */,
 				F16426851DFDD1AD00BE0C9C /* StatusMenuController.swift in Sources */,
+				F1D574EF1E00241700E71663 /* MouseManager.swift in Sources */,
 				F16426781DFDCEDF00BE0C9C /* AppDelegate.swift in Sources */,
 				F1D574ED1E00162D00E71663 /* StatusView.swift in Sources */,
+				F1D574F31E0028A100E71663 /* Constants.swift in Sources */,
+				F1D574F51E0028B800E71663 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
