@@ -11,6 +11,7 @@
 		F164267A1DFDCEDF00BE0C9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16426791DFDCEDF00BE0C9C /* Assets.xcassets */; };
 		F164267D1DFDCEDF00BE0C9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F164267B1DFDCEDF00BE0C9C /* MainMenu.xib */; };
 		F16426851DFDD1AD00BE0C9C /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16426841DFDD1AD00BE0C9C /* StatusMenuController.swift */; };
+		F1D574ED1E00162D00E71663 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D574EC1E00162D00E71663 /* StatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		F164267C1DFDCEDF00BE0C9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F164267E1DFDCEDF00BE0C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F16426841DFDD1AD00BE0C9C /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		F1D574EC1E00162D00E71663 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				F16426841DFDD1AD00BE0C9C /* StatusMenuController.swift */,
 				F16426791DFDCEDF00BE0C9C /* Assets.xcassets */,
 				F164267B1DFDCEDF00BE0C9C /* MainMenu.xib */,
+				F1D574EC1E00162D00E71663 /* StatusView.swift */,
 				F164267E1DFDCEDF00BE0C9C /* Info.plist */,
 			);
 			path = "Basic Trackpad Server";
@@ -135,6 +138,7 @@
 			files = (
 				F16426851DFDD1AD00BE0C9C /* StatusMenuController.swift in Sources */,
 				F16426781DFDCEDF00BE0C9C /* AppDelegate.swift in Sources */,
+				F1D574ED1E00162D00E71663 /* StatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

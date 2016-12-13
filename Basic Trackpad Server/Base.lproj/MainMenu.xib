@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -17,10 +18,15 @@
         <customObject id="nVN-gd-4hZ" customClass="StatusMenuController" customModule="Basic_Trackpad_Server" customModuleProvider="target">
             <connections>
                 <outlet property="statusMenu" destination="Dvf-CJ-wKs" id="y0v-91-CvX"/>
+                <outlet property="statusMenuItem" destination="sM7-y9-MlU" id="RzV-OX-BTR"/>
+                <outlet property="statusView" destination="eIe-cA-R0y" id="veZ-4V-RMJ"/>
             </connections>
         </customObject>
         <menu id="Dvf-CJ-wKs">
             <items>
+                <menuItem title="Status" id="sM7-y9-MlU">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
                 <menuItem title="Quit" id="asz-GI-k7X" userLabel="Quit">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -29,5 +35,24 @@
                 </menuItem>
             </items>
         </menu>
+        <customView id="eIe-cA-R0y" customClass="StatusView" customModule="Basic_Trackpad_Server" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KJf-vL-1Lv">
+                    <rect key="frame" x="86" y="53" width="94" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Not connected" id="qrd-15-Rcq">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="KJf-vL-1Lv" firstAttribute="centerX" secondItem="eIe-cA-R0y" secondAttribute="centerX" id="Ft1-Io-CFz"/>
+                <constraint firstItem="KJf-vL-1Lv" firstAttribute="top" secondItem="eIe-cA-R0y" secondAttribute="top" constant="20" id="Zd8-7f-lc0"/>
+            </constraints>
+            <point key="canvasLocation" x="182" y="344"/>
+        </customView>
     </objects>
 </document>

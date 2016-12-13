@@ -10,9 +10,14 @@ class StatusMenuController: NSObject {
     
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     
+    @IBOutlet weak var statusView: StatusView!
+    @IBOutlet weak var statusMenuItem: NSMenuItem!
+    
     override func awakeFromNib() {
         statusItem.title = "Basic Trackpad"
         statusItem.menu = statusMenu
+        
+        statusMenuItem.view = statusView
     }
     
     @IBAction func quitClicked(_ sender: NSMenuItem) {
