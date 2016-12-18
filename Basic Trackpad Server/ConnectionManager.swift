@@ -57,6 +57,10 @@ class ConnectionManager: NSObject, MCSessionDelegate, MCNearbyServiceAdvertiserD
             MouseManager.shared.mouseIsDown = data.withUnsafeBytes({ (ptr) -> Bool in
                 return ptr.pointee
             })
+        } else if data.count == MemoryLayout<UInt16>.size {
+            MouseManager.shared.mouseEventWith(code: data.withUnsafeBytes({ (ptr) -> UInt16 in
+                return ptr.pointee
+            }))
         }
     }
     

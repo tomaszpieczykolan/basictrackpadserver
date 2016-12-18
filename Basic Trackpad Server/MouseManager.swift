@@ -40,4 +40,20 @@ class MouseManager {
         let newMouseLocation = CGPoint(x: previousMouseLocation.x + translation.dx, y: previousMouseLocation.y + translation.dy)
         self.mousePosition = newMouseLocation
     }
+    
+    func lmbClick() {
+        if !self.mouseIsDown {
+            self.mouseIsDown = true
+            self.mouseIsDown = false
+        }
+    }
+    
+    func mouseEventWith(code: UInt16) {
+        switch code {
+        case 0:
+            self.lmbClick()
+        default:
+            break
+        }
+    }
 }
